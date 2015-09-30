@@ -3,3 +3,6 @@
 export(get_crop_table)
 export(new_crop_table)
 export(post_crop_table)
+export(run_crops)
+export(server_crop)
+export(ui_crop)

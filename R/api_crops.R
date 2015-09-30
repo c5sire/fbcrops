@@ -28,12 +28,11 @@ get_crop_table <- function(){
   if(!file.exists(fns)) {
     base_dir <-  dirname(fns)
     if(!dir.exists(base_dir)) dir.create(base_dir)
-    table_crop <- new_crop_table()
-    save(table_crop, file = fns)
+    table_crops <- new_crop_table()
+    save(table_crops, file = fns)
   }
   load(fns)
-  table_crop
-
+  table_crops
 }
 
 #' post_crop_table
