@@ -1,13 +1,13 @@
 Package: fbcrops
 Title: Manages a list of crops
 Version: 0.0.1
-Authors@R: person("Reinhard", "Simon",
-  email = "r.simon@cgiar.org", role = c("aut", "cre"))
-Description: Manages a list of crops
+Authors@R: person("Reinhard", "Simon", email = "r.simon@cgiar.org", role = c("aut", "cre"))
+Description: Manages a list of crops.
 Depends: R (>= 3.2.2)
 License: GPL-3
 LazyData: true
 Suggests: testthat,
     knitr,
-    rmarkdown
+    rmarkdown,
+    fbglobal
 VignetteBuilder: knitr
