@@ -6,12 +6,11 @@
 #' @param output shinyserver output
 #' @param session shinyserver session
 #' @param dom target dom element name
+#' @param values reactive values
 #' @author Reinhard Simon
 #' @export
-server_crop <- function(input, output, session, dom="hot_crops"){
-
-
-  values = shiny::reactiveValues()
+server_crop <- function(input, output, session, dom="hot_crops", values){
+  #values = shiny::reactiveValues()
   setHot_crops = function(x) values[[dom]] = x
 
   shiny::observe({
@@ -28,6 +27,8 @@ server_crop <- function(input, output, session, dom="hot_crops"){
     } else {
       DF = get_crop_table()
     }
+
+
 
     setHot_crops(DF)
 

@@ -4,7 +4,7 @@
 \alias{server_crop}
 \title{Server side logic}
 \usage{
-server_crop(input, output, session, dom = "hot_crops")
+server_crop(input, output, session, dom = "hot_crops", values)
 }
 \arguments{
 \item{input}{shinyserver input}
@@ -14,6 +14,8 @@ server_crop(input, output, session, dom = "hot_crops")
 \item{session}{shinyserver session}
 
 \item{dom}{target dom element name}
+
+\item{values}{reactive values}
 }
 \description{
 Constructs table
