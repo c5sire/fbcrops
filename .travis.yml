@@ -3,4 +3,5 @@
 language: r
 warnings_are_errors: true
 sudo: false
-r_github_packages: c5sire/fbglobal
+r_github_packages:
+ - c5sire/fbglobal
