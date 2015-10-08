@@ -12,7 +12,7 @@ ui_crop <- function(type = "tab", title = "Crops configuration", name = "resourc
                     output = "hot_crops"){
   shinydashboard::tabItem(tabName = name,
           shiny::fluidRow(
-            shinydashboard::box(
+            shinydashboard::box(height = 400,
               title = title,
               rhandsontable::rHandsontableOutput(output)
             )

@@ -32,7 +32,7 @@ server_crop <- function(input, output, session, dom="hot_crops", values){
 
     setHot_crops(DF)
 
-    rh <- rhandsontable::rhandsontable(DF)
+    rh <- rhandsontable::rhandsontable(DF, height = 400)
     rhandsontable::hot_table(rh, highlightCol = TRUE, highlightRow = TRUE)
 
   })
