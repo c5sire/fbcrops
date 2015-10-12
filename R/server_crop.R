@@ -28,8 +28,6 @@ server_crop <- function(input, output, session, dom="hot_crops", values){
       DF = get_crop_table()
     }
 
-
-
     setHot_crops(DF)
 
     rh <- rhandsontable::rhandsontable(DF, height = 400)
