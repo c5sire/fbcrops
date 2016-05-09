@@ -15,5 +15,6 @@ Suggests:
     shiny,
     shinydashboard,
     rhandsontable
+Remotes: c5sire/fbglobal
 VignetteBuilder: knitr
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1
